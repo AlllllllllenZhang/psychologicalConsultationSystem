@@ -24,3 +24,18 @@ addr varchar(50) not null,
 otherInfo varchar(50) not null
 )
 go
+create table Quiz(
+ID int primary key not null,
+context varchar(200) not null,
+answer varchar(50) not null,
+interpretation varchar(200) not null,
+score int not null,
+correct bit not null
+)
+go
+create table VisiterScore(
+VID int primary key not null,
+sumScore int not null,
+detailInfo varchar(100) not null
+)
+go
